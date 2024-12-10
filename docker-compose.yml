@@ -1,0 +1,9 @@
+services:
+  app:
+    build: ./app
+    # restart: always
+    ports:
+      - '3000:3000'
+    volumes:
+      - /app/jira-clone/node_modules
+      - ./app:/app
